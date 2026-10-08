@@ -1,0 +1,4 @@
+.container {
+  width: min(1100px, 100% - 2rem);
+  margin-inline: auto;
+}

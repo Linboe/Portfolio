@@ -1,0 +1,32 @@
+.layout {
+  display: grid;
+  gap: clamp(1.5rem, 5vw, 3rem);
+}
+
+.paragraph {
+  margin-bottom: var(--space-sm);
+}
+
+.skillsTitle {
+  margin-bottom: var(--space-sm);
+  color: var(--color-heading-light);
+}
+
+.skillList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.skill {
+  padding: 0.4rem 0.9rem;
+  font-size: 0.9rem;
+  background: var(--color-surface);
+  border-radius: 999px;
+}
+
+@media (min-width: 900px) {
+  .layout {
+    grid-template-columns: 2fr 1fr;
+  }
+}

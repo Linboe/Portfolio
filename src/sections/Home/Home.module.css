@@ -1,0 +1,46 @@
+.home {
+  display: flex;
+  align-items: center;
+  min-height: calc(100vh - var(--navbar-height));
+  min-height: calc(100svh - var(--navbar-height));
+  text-align: center;
+}
+
+.homeContent {
+  padding-block: clamp(2rem, 8vw, 4rem);
+}
+
+.greeting {
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+.name {
+  margin-block: 0.5rem;
+  font-size: clamp(2.2rem, 9vw, 4.5rem);
+  line-height: 1.1;
+  overflow-wrap: anywhere;
+}
+
+.role {
+  font-size: clamp(1.1rem, 4vw, 1.8rem);
+  font-weight: 500;
+}
+
+.intro {
+  max-width: 560px;
+  margin: 1.2rem auto 2rem;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+@media (min-width: 480px) {
+  .actions {
+    flex-direction: row;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,23 @@
+.button {
+  display: inline-block;
+  padding: 0.75rem 1.6rem;
+  border: 2px solid var(--color-surface);
+  border-radius: 999px;
+  text-align: center;
+  font-weight: 600;
+  transition: transform 0.15s ease;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+}
+
+.primary {
+  background: var(--color-surface);
+  color: var(--color-text-light);
+}
+
+.secondary {
+  background: transparent;
+  color: var(--color-text-dark);
+}

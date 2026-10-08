@@ -1,0 +1,18 @@
+.section {
+  padding-block: clamp(3rem, 8vw, 5rem);
+}
+
+.sectionAlt {
+  background: var(--color-background-alt);
+  color: var(--color-text-light);
+}
+
+.title {
+  margin-bottom: clamp(1.5rem, 5vw, 2.5rem);
+  text-align: center;
+  font-size: clamp(1.6rem, 5vw, 2rem);
+}
+
+.sectionAlt .title {
+  color: var(--color-heading-light);
+}
