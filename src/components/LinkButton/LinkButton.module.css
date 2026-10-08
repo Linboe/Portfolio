@@ -21,3 +21,7 @@
   background: transparent;
   color: var(--color-text-dark);
 }
+ 
+.secondary:hover {
+  background: rgba(63, 50, 68, 0.15);
+}
