@@ -7,8 +7,15 @@ function About() {
         <Section id="about" title="About" variant="alt">
             <div className={styles.layout}>
                 <div>
-                    <p className={styles.paragraph}>about me.</p>
-                    <p className={styles.paragraph}>background and goals.</p>
+                    <p className={styles.paragraph}>
+                        Background: Architecture | Art History & Visual Studies
+                        | Fine Art{' '}
+                    </p>
+
+                    <p className={styles.paragraph}>
+                        Goal: Merging art, architecture, and tech to craft
+                        engaging digital experiences.
+                    </p>
                 </div>
 
                 <div>
