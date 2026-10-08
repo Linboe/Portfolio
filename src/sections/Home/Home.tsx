@@ -13,7 +13,7 @@ function Home() {
                     Looking for LIA.
                 </p>
                 <div className={styles.actions}>
-                    <LinkButton href="#projects">View my projects</LinkButton>
+                    <LinkButton href="#projects" variant="secondary">View my projects</LinkButton>
                     <LinkButton href="#contact" variant="secondary">
                         Contact me
                     </LinkButton>

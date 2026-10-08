@@ -4,8 +4,8 @@ import styles from './Contact.module.css';
 
 function Contact() {
     return (
-        <Section id="contact" title="Kontakt" variant="alt">
-            <p className={styles.intro}>Hör gärna av dig!</p>
+        <Section id="contact" title="Contact" variant="alt">
+            <p className={styles.intro}>Feel free to get in touch!</p>
 
             <ul className={styles.contactList}>
                 {contacts.map((contact) => {

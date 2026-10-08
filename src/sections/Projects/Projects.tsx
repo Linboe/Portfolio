@@ -24,7 +24,7 @@ function Projects() {
               );
 
     return (
-        <Section id="projects" title="Projekt">
+        <Section id="projects" title="Projects">
             <ProjectFilter
                 technologies={technologies}
                 selectedFilter={selectedFilter}
