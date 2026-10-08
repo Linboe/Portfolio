@@ -5,4 +5,7 @@ export const skills: string[] = [
     'HTML',
     'CSS',
     'Git',
+    'EXPRESS',
+    'FIGMA',
+    'Vite'
 ];
