@@ -9,52 +9,67 @@ import image6 from '../assets/projects/project-example.png';
 export const projects: Project[] = [
     {
         id: 1,
-        title: 'Weather App',
-        description: 'Visar väder för valfri stad med data från ett öppet API.',
+        title: 'Webshop - YUUM',
+        description:
+            'A responsive, keyboard-accessible single-page webshop.',
         imageUrl: image1,
-        technologies: ['React', 'TypeScript'],
-        liveUrl: 'https://example.com/weather',
-        repoUrl: 'https://github.com/username/weather-app',
+        technologies: ['CSS', 'JavaScript'],
+        liveUrl: 'https://linboe.github.io/Webshop---YUUM/',
+        repoUrl: 'https://github.com/Linboe/Webshop---YUUM',
     },
     {
         id: 2,
-        title: 'Recipe Finder',
-        description: 'Sök bland recept och spara dina favoriter.',
+        title: 'Budget Planner',
+        description:
+            'A simple budget planner designed to help users track income and expenses.',
         imageUrl: image2,
-        technologies: ['React', 'JavaScript'],
-        repoUrl: 'https://github.com/username/recipe-finder',
+        technologies: ['CSS', 'TypeScript'],
+        liveUrl: 'https://linboe.github.io/Budget-Planner/',
+        repoUrl: 'https://github.com/Linboe/Budget-Planner',
     },
     {
         id: 3,
-        title: 'Task Manager',
+        title: 'Escape Room - Stranger Woods',
         description:
-            'Att göra-lista med kategorier och markering av klara uppgifter.',
+            'A digital escape room experience. The game consists of 6 interconnected rooms.',
         imageUrl: image3,
-        technologies: ['React', 'TypeScript'],
-        repoUrl: 'https://github.com/username/task-manager',
+        technologies: ['CSS', 'TypeScript', 'Group project'],
+        liveUrl:
+            'https://medieinstitutet.github.io/fed25d-js-intro-grupparbete-the-dopefish-admirers/',
+        repoUrl: 'https://github.com/Linboe/Escape-room---group-project',
     },
     {
         id: 4,
-        title: 'Quiz Game',
-        description: 'Frågesport med poängräkning och olika svårighetsgrader.',
+        title: 'Full-stack Book-app ',
+        description:
+            'A full-stack MongoDB application featuring end-to-end CRUD capabilities for book catalog management.',
         imageUrl: image4,
-        technologies: ['JavaScript'],
-        liveUrl: 'https://example.com/quiz',
+        technologies: [
+            'TypeScript',
+            'CSS',
+            'MongoDB',
+            'Express',
+            'Group project',
+        ],
+        repoUrl: 'https://',
     },
     {
         id: 5,
-        title: 'Landing Page',
-        description: 'Responsiv landningssida byggd med enbart HTML och CSS.',
+        title: 'Frontend Design Implementation - Memcap',
+        description:
+            'A responsive, typography-focused landing page coded from a Figma design with an emphasis on accessibility.',
         imageUrl: image5,
-        technologies: ['CSS'],
-        repoUrl: 'https://github.com/username/landing-page',
+        technologies: ['CSS', 'TypeScript', 'Group project'],
+        liveUrl:
+            'https://medieinstitutet.github.io/fed25d-grafiska-verktyg-memcap/',
     },
     {
         id: 6,
-        title: 'Budget Tracker',
-        description: 'Håll koll på inkomster och utgifter med diagram.',
+        title: 'GSAP Animation',
+        description: 'Interactive SVG Animation with GSAP',
         imageUrl: image6,
-        technologies: ['TypeScript', 'CSS'],
-        repoUrl: 'https://github.com/username/budget-tracker',
+        technologies: ['JavaScript', 'CSS'],
+        liveUrl:
+            'https://medieinstitutet.github.io/fed25d-grafiska-verktyg-individuell-Linboe/',
     },
 ];
