@@ -9,7 +9,7 @@ function About() {
                 <div>
                     <p className={styles.paragraph}>
                         Background: Architecture | Art History & Visual Studies
-                        | Fine Art{' '}
+                        | Fine Art
                     </p>
 
                     <p className={styles.paragraph}>

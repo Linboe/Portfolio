@@ -35,7 +35,7 @@ function ProjectFilter({
                         onClick={() => onSelect(option)}
                         aria-pressed={isActive}
                     >
-                        {option === 'All' ? 'Alla' : option}
+                        {option}
                     </button>
                 );
             })}

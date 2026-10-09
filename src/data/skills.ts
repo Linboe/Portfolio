@@ -6,6 +6,7 @@ export const skills: string[] = [
     'CSS',
     'Git',
     'EXPRESS',
-    'FIGMA',
-    'Vite'
+    'MongoDB',
+    'Vite',
+    'Figma'
 ];
