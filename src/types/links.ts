@@ -6,7 +6,7 @@ export type NavLink = {
 };
 
 export type ContactLink = {
-    label: ReactNode;
-    value: string;
+    label: string;
+    value: ReactNode;
     href: string;
 };

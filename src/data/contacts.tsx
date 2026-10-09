@@ -5,18 +5,18 @@ import { BiLogoGmail } from 'react-icons/bi';
 
 export const contacts: ContactLink[] = [
     {
-        label: <BiLogoGmail size={24} />,
-        value: 'linn.boek@gmail.com',
+        label: 'E-mail',
+        value: <BiLogoGmail size={24} />,
         href: 'mailto:linn.boek@gmail.com',
     },
     {
-        label: <FiGithub size={24} />,
-        value: 'linboe',
+        label: 'GitHub',
+        value: <FiGithub size={24} />,
         href: 'https://github.com/linboe',
     },
     {
-        label: <FaLinkedin size={24} />,
-        value: 'linnboekhout',
+        label: 'LinkedIn',
+        value: <FaLinkedin size={24} />,
         href: 'https://www.linkedin.com/in/linn-boekhout-78143b398/',
     },
 ];
