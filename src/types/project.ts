@@ -1,4 +1,4 @@
-export type Technology = 'React' | 'TypeScript' | 'JavaScript' | 'CSS' | 'MongoDB' | 'Figma' | 'Express' | 'Group project';
+export type Technology = 'React' | 'TypeScript' | 'JavaScript' | 'CSS' | 'MongoDB' | 'MySQL' | 'Figma' | 'Express' | 'Group project';
 
 export type ProjectFilterValue = Technology | 'All';
 

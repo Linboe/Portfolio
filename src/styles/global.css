@@ -24,8 +24,8 @@
   /* Layout */
   --navbar-height: 4rem;
 
-  --font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-  --font-family-heading: "Offside", sans-serif;
+  --font-family: "Roboto Flex Fallback", sans-serif;
+  --font-family-heading: "Anton", sans-serif;
 
 * {
   box-sizing: border-box;

@@ -31,10 +31,6 @@ function Projects() {
                 onSelect={setSelectedFilter}
             />
 
-            <p className={styles.resultCount} aria-live="polite">
-                Visar {visibleProjects.length} av {projects.length} projekt
-            </p>
-
             <div className={styles.projectGrid}>
                 {visibleProjects.map((project) => (
                     <ProjectCard key={project.id} project={project} />

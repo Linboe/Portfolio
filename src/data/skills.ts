@@ -8,5 +8,6 @@ export const skills: string[] = [
     'EXPRESS',
     'MongoDB',
     'Vite',
-    'Figma'
+    'Figma',
+    'MySQL'
 ];

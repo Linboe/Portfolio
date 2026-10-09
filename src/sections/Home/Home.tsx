@@ -40,7 +40,7 @@ export function Home() {
                         View my projects
                     </LinkButton>
                     <LinkButton href="#contact" variant="secondary">
-                        Contact me
+                        Let's talk
                     </LinkButton>
                 </div>
             </Container>
