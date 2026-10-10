@@ -6,6 +6,11 @@ import Contact from './sections/Contact/Contact';
 import Home from './sections/Home/Home';
 import Projects from './sections/Projects/Projects';
 
+if ('scrollRestoration' in history) {
+    history.scrollRestoration = 'manual';
+}
+window.scrollTo(0, 0);
+
 function App() {
     return (
         <>
