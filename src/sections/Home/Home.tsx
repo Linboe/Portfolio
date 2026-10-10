@@ -14,19 +14,19 @@ export function Home() {
                 </p>
                 <h1
                     className={`${styles.name} ${styles.reveal}`}
-                    style={{ animationDelay: '0.2s' }}
+                    style={{ animationDelay: '0.22s' }}
                 >
                     Linn
                 </h1>
                 <p
                     className={`${styles.role} ${styles.reveal}`}
-                    style={{ animationDelay: '0.3s' }}
+                    style={{ animationDelay: '0.34s' }}
                 >
                     Frontend Developer student
                 </p>
                 <p
                     className={`${styles.intro} ${styles.reveal}`}
-                    style={{ animationDelay: '0.4s' }}
+                    style={{ animationDelay: '0.46s' }}
                 >
                     Focused on creating clean code, modern user interfaces, and
                     seamless web experiences. Looking for an internship (LIA)
@@ -34,7 +34,7 @@ export function Home() {
                 </p>
                 <div
                     className={`${styles.actions} ${styles.reveal}`}
-                    style={{ animationDelay: '0.5s' }}
+                    style={{ animationDelay: '0.58s' }}
                 >
                     <LinkButton href="#projects" variant="secondary">
                         View my projects
