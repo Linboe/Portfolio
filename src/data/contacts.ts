@@ -1,22 +1,22 @@
-import type { ContactLink } from '../types/links';
-import { FiGithub } from 'react-icons/fi';
-import { FaLinkedin } from 'react-icons/fa6';
 import { BiLogoGmail } from 'react-icons/bi';
+import { FaLinkedin } from 'react-icons/fa6';
+import { FiGithub } from 'react-icons/fi';
+import type { ContactLink } from '../types/links';
 
-export const contacts: ContactLink[] = [
+export const contacts: readonly ContactLink[] = [
     {
         label: 'E-mail',
-        value: <BiLogoGmail size={24} />,
+        icon: BiLogoGmail,
         href: 'mailto:linn.boek@gmail.com',
     },
     {
         label: 'GitHub',
-        value: <FiGithub size={24} />,
+        icon: FiGithub,
         href: 'https://github.com/linboe',
     },
     {
         label: 'LinkedIn',
-        value: <FaLinkedin size={24} />,
+        icon: FaLinkedin,
         href: 'https://www.linkedin.com/in/linn-boekhout-78143b398/',
     },
 ];

@@ -1,4 +1,4 @@
-import type { ReactNode } from "react";
+import type { IconType } from 'react-icons';
 
 export type NavLink = {
     href: string;
@@ -6,7 +6,8 @@ export type NavLink = {
 };
 
 export type ContactLink = {
-    label: string;
-    value: ReactNode;
-    href: string;
+    readonly label: string;
+    readonly icon: IconType;
+    readonly href: string;
 };
+

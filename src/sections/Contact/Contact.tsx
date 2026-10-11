@@ -2,31 +2,37 @@ import Section from '../../components/Section/Section';
 import { contacts } from '../../data/contacts';
 import styles from './Contact.module.css';
 
+const ICON_SIZE = 24;
+
+const isExternalLink = (href: string): boolean => /^https?:\/\//i.test(href);
+
 function Contact() {
     return (
         <Section id="contact" title="Contact" variant="alt">
             <p className={styles.intro}>Feel free to get in touch!</p>
 
-            <ul className={styles.contactList}>
-                {contacts.map((contact) => {
-                    const isExternal = contact.href.startsWith('http');
+            <ul className={styles.contactList} aria-label="Contact links">
+                {contacts.map(({ label, icon: Icon, href }) => {
+                    const external = isExternalLink(href);
 
                     return (
-                        <li key={contact.label} className={styles.contactItem}>
-                            <span className={styles.contactLabel}>
-                                {contact.label}
-                            </span>
+                        <li key={href}>
                             <a
-                                className={styles.contactValue}
-                                href={contact.href}
-                                target={isExternal ? '_blank' : undefined}
-                                rel={
-                                    isExternal
-                                        ? 'noopener noreferrer'
-                                        : undefined
+                                className={styles.contactLink}
+                                href={href}
+                                aria-label={
+                                    external
+                                        ? `${label} (opens in a new tab)`
+                                        : label
                                 }
+                                {...(external
+                                    ? {
+                                          target: '_blank',
+                                          rel: 'noopener noreferrer',
+                                      }
+                                    : {})}
                             >
-                                {contact.value}
+                                <Icon size={ICON_SIZE} aria-hidden="true" />
                             </a>
                         </li>
                     );
