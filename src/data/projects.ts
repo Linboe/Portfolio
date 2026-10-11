@@ -10,8 +10,7 @@ export const projects: Project[] = [
     {
         id: 1,
         title: 'Webshop - YUUM',
-        description:
-            'A responsive, keyboard-accessible single-page webshop.',
+        description: 'A responsive, keyboard-accessible single-page webshop.',
         imageUrl: image1,
         technologies: ['CSS', 'JavaScript'],
         liveUrl: 'https://linboe.github.io/Webshop---YUUM/',
@@ -51,13 +50,12 @@ export const projects: Project[] = [
             'Express',
             'Group project',
         ],
-        repoUrl: 'https://',
     },
     {
         id: 5,
         title: 'Frontend Design Implementation - Memcap',
         description:
-            'A responsive, typography-focused landing page coded from a Figma design with an emphasis on accessibility.',
+            'A typography-focused landing page coded from a Figma design with an emphasis on responsiveness.',
         imageUrl: image5,
         technologies: ['CSS', 'TypeScript', 'Group project'],
         liveUrl:
@@ -66,7 +64,7 @@ export const projects: Project[] = [
     {
         id: 6,
         title: 'GSAP Animation',
-        description: 'Interactive SVG Animation with GSAP',
+        description: 'SVG Animation with GSAP',
         imageUrl: image6,
         technologies: ['JavaScript', 'CSS'],
         liveUrl:
