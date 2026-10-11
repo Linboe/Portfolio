@@ -1,10 +1,10 @@
 import type { Project } from '../types/project';
-import image1 from '../assets/projects/project-example.png';
-import image2 from '../assets/projects/project-example.png';
-import image3 from '../assets/projects/project-example.png';
-import image4 from '../assets/projects/project-example.png';
-import image5 from '../assets/projects/project-example.png';
-import image6 from '../assets/projects/project-example.png';
+import image1 from '../assets/projects/project-webshop-yuum.png';
+import image2 from '../assets/projects/project-budget-planner.png';
+import image3 from '../assets/projects/project-escape-room.png';
+import image4 from '../assets/projects/project-book-app.png';
+import image5 from '../assets/projects/project-memcap.png';
+import image6 from '../assets/projects/project-gsap-animation.png';
 
 export const projects: Project[] = [
     {
