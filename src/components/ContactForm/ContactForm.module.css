@@ -37,7 +37,7 @@ textarea.input {
 }
 
 .input:focus-visible {
-  outline: 2px solid var(--color-highlight);
+  outline: 2px solid var(--color-navbar);
   outline-offset: 2px;
 }
 
@@ -58,7 +58,7 @@ textarea.input {
   font-weight: 600;
   color: #fff;
   cursor: pointer;
-  background: var(--color-highlight);
+  background: var(--color-background-alt);
   border: none;
   border-radius: var(--radius);
   transition: opacity var(--transition);
