@@ -73,6 +73,16 @@
   font-weight: 600;
   color: var(--color-heading-light);
   text-decoration: underline;
+  text-underline-offset: 3px;
+  transition:
+    color var(--transition),
+    text-underline-offset var(--transition);
+}
+
+.link:hover,
+.link:focus-visible {
+  color: var(--color-accent);               /* ljus rosa, ca 7:1 mot kortets bakgrund */
+  text-underline-offset: 6px;   /* extra signal utöver färgen */
 }
 
 @media (min-width: 480px) {
