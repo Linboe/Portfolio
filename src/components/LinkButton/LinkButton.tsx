@@ -3,13 +3,12 @@ import styles from './LinkButton.module.css';
 
 type LinkButtonProps = {
     href: string;
-    variant?: 'primary' | 'secondary';
     children: ReactNode;
 };
 
-function LinkButton({ href, variant = 'primary', children }: LinkButtonProps) {
+function LinkButton({ href, children }: LinkButtonProps) {
     return (
-        <a href={href} className={`${styles.button} ${styles[variant]}`}>
+        <a href={href} className={styles.button}>
             {children}
         </a>
     );
