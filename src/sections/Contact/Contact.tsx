@@ -1,3 +1,4 @@
+import ContactForm from '../../components/ContactForm/ContactForm';
 import Section from '../../components/Section/Section';
 import { contacts } from '../../data/contacts';
 import styles from './Contact.module.css';
@@ -10,6 +11,8 @@ function Contact() {
     return (
         <Section id="contact" title="Contact" variant="alt">
             <p className={styles.intro}>Feel free to get in touch!</p>
+
+            <ContactForm />
 
             <ul className={styles.contactList} aria-label="Contact links">
                 {contacts.map(({ label, icon: Icon, href }) => {

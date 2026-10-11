@@ -1,0 +1,75 @@
+.form {
+  display: grid;
+  gap: var(--space-sm);
+  max-width: 500px;
+  margin: 0 auto var(--space-lg);
+  padding: var(--space-sm) 1.2rem;
+  background: var(--color-surface);
+  border-radius: var(--radius);
+  text-align: left;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.label {
+  color: var(--color-heading-light);
+  font-weight: 600;
+}
+
+.input {
+  width: 100%;
+  padding: 0.6rem 0.8rem;
+  font: inherit;
+  color: inherit;
+  background: transparent;
+  border: 1px solid var(--color-heading-light);
+  border-radius: var(--radius);
+  transition: border-color var(--transition);
+}
+
+textarea.input {
+  min-height: 8rem;
+  resize: vertical;
+}
+
+.input:focus-visible {
+  outline: 2px solid var(--color-highlight);
+  outline-offset: 2px;
+}
+
+.input[aria-invalid='true'] {
+  border-color: var(--color-error, #c0392b);
+}
+
+.error {
+  margin: 0;
+  font-size: 0.875rem;
+  color: var(--color-error, #c0392b);
+}
+
+.submit {
+  align-self: flex-start;
+  padding: 0.7rem 1.5rem;
+  font: inherit;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  background: var(--color-highlight);
+  border: none;
+  border-radius: var(--radius);
+  transition: opacity var(--transition);
+}
+
+.submit:hover {
+  opacity: 0.85;
+}
+
+.success {
+  margin: 0;
+  font-weight: 600;
+  color: var(--color-success, #1e7e34);
+}
