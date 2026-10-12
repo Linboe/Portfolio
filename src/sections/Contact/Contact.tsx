@@ -10,11 +10,19 @@ const isExternalLink = (href: string): boolean => /^https?:\/\//i.test(href);
 function Contact() {
     return (
         <Section id="contact" title="Contact" variant="alt">
-            <p className={styles.intro}>Feel free to get in touch!</p>
+            <p className={styles.intro} data-reveal>
+                Feel free to get in touch!
+            </p>
 
-            <ContactForm />
+            <div data-reveal>
+                <ContactForm />
+            </div>
 
-            <ul className={styles.contactList} aria-label="Contact links">
+            <ul
+                className={styles.contactList}
+                aria-label="Contact links"
+                data-reveal
+            >
                 {contacts.map(({ label, icon: Icon, href }) => {
                     const external = isExternalLink(href);
 

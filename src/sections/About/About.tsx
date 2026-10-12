@@ -6,7 +6,7 @@ function About() {
     return (
         <Section id="about" title="About" variant="alt">
             <div className={styles.layout}>
-                <div>
+                <div data-reveal>
                     <p className={styles.paragraph}>
                         Background: Architecture | Art History & Visual Studies
                         | Fine Art
@@ -18,7 +18,7 @@ function About() {
                     </p>
                 </div>
 
-                <div>
+                <div data-reveal>
                     <h3 className={styles.skillsTitle}>Technical skills</h3>
                     <ul className={styles.skillList}>
                         {skills.map((skill) => (

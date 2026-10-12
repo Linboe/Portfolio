@@ -37,14 +37,16 @@ function Projects() {
 
     return (
         <Section id="projects" title="Projects">
-            <ProjectFilter
-                technologies={technologies}
-                selectedTags={selectedTags}
-                onToggle={handleToggle}
-                onClear={handleClear}
-            />
+            <div data-reveal>
+                <ProjectFilter
+                    technologies={technologies}
+                    selectedTags={selectedTags}
+                    onToggle={handleToggle}
+                    onClear={handleClear}
+                />
+            </div>
 
-            <div className={styles.projectGrid}>
+            <div className={styles.projectGrid} data-reveal>
                 {visibleProjects.map((project) => (
                     <ProjectCard key={project.id} project={project} />
                 ))}

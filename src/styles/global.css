@@ -36,9 +36,22 @@
 }
 
 html {
-  scroll-behavior: smooth;
   scroll-padding-top: calc(var(--navbar-height) + 0.5rem);
   -webkit-text-size-adjust: 100%;
+}
+
+/* Lenis (smooth scroll) */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
 }
 
 body {
