@@ -71,6 +71,8 @@ export const projects: Project[] = [
         technologies: ['Figma', 'Group project'],
         liveUrl:
             'https://www.figma.com/proto/xzW12DwasyUBEM36vQMcja/Grafisk-design-kurs?node-id=20-55&t=IGBxc0WY8wIUcXAv-1&starting-point-node-id=20%3A55&show-proto-sidebar=1',
+        repoUrl:
+            'https://www.figma.com/design/xzW12DwasyUBEM36vQMcja/Grafisk-design-kurs?node-id=20-54&t=iRVlbkBoUPNse7J7-1',
     },
     {
         id: 7,

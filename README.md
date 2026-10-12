@@ -2,6 +2,10 @@
 ## Live Link
 👉 Link to Live Portfolio 
 
+## Design
+Instead of using a Figma design, I used my old portfolio as a design template. It's fun to look back since it was the very first assignment of this program!
+![Beskrivning av bilden](./src/assets/Screenshot%202026-10-12%20at%2015-12-23%20Portfolio%20Linn%20Boekhout.png)
+
 ## Project Description
 This project is a personal portfolio designed to showcase development projects, technical skills, and background. 
 
