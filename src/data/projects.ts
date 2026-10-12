@@ -1,11 +1,12 @@
 import type { Project } from '../types/project';
 import image1 from '../assets/projects/project-webshop-yuum.png';
 import image2 from '../assets/projects/project-budget-planner.png';
-import image3 from '../assets/projects/project-escape-room.png';
+import image3 from '../assets/projects/project-escape-room-memory.png';
 import image4 from '../assets/projects/project-book-app.png';
 import image5 from '../assets/projects/project-memcap.png';
 import image6 from '../assets/projects/project-bubs.png';
 import image7 from '../assets/projects/project-gsap-animation.png';
+import image8 from '../assets/projects/project-eshop-database.png'
 
 export const projects: Project[] = [
     {
@@ -65,19 +66,28 @@ export const projects: Project[] = [
     {
         id: 6,
         title: 'Figma Design - Bubs',
-        description: 'A website redesign for the candy brand Bubs',
+        description: 'A website redesign for the candy brand Bubs.',
         imageUrl: image6,
         technologies: ['Figma', 'Group project'],
         liveUrl:
             'https://www.figma.com/proto/xzW12DwasyUBEM36vQMcja/Grafisk-design-kurs?node-id=20-55&t=IGBxc0WY8wIUcXAv-1&starting-point-node-id=20%3A55&show-proto-sidebar=1',
     },
     {
-        id: 6,
+        id: 7,
         title: 'GSAP Animation',
-        description: 'SVG Animation with GSAP',
+        description: 'SVG Animation with GSAP.',
         imageUrl: image7,
         technologies: ['JavaScript', 'CSS'],
         liveUrl:
             'https://medieinstitutet.github.io/fed25d-grafiska-verktyg-individuell-Linboe/',
+    },
+    {
+        id: 8,
+        title: 'API Development and Database Normalization',
+        description: 'A RESTful API for managing an e-shop product catalog.',
+        imageUrl: image8,
+        technologies: ['Express', 'TypeScript', 'MySQL'],
+        repoUrl:
+            'https://github.com/Linboe/Inl1-Api-utveckling-och-DB-normalisering',
     },
 ];
