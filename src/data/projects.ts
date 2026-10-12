@@ -4,7 +4,8 @@ import image2 from '../assets/projects/project-budget-planner.png';
 import image3 from '../assets/projects/project-escape-room.png';
 import image4 from '../assets/projects/project-book-app.png';
 import image5 from '../assets/projects/project-memcap.png';
-import image6 from '../assets/projects/project-gsap-animation.png';
+import image6 from '../assets/projects/project-bubs.png';
+import image7 from '../assets/projects/project-gsap-animation.png';
 
 export const projects: Project[] = [
     {
@@ -63,9 +64,18 @@ export const projects: Project[] = [
     },
     {
         id: 6,
+        title: 'Figma Design - Bubs',
+        description: 'A website redesign for the candy brand Bubs',
+        imageUrl: image6,
+        technologies: ['Figma', 'Group project'],
+        liveUrl:
+            'https://www.figma.com/proto/xzW12DwasyUBEM36vQMcja/Grafisk-design-kurs?node-id=20-55&t=IGBxc0WY8wIUcXAv-1&starting-point-node-id=20%3A55&show-proto-sidebar=1',
+    },
+    {
+        id: 6,
         title: 'GSAP Animation',
         description: 'SVG Animation with GSAP',
-        imageUrl: image6,
+        imageUrl: image7,
         technologies: ['JavaScript', 'CSS'],
         liveUrl:
             'https://medieinstitutet.github.io/fed25d-grafiska-verktyg-individuell-Linboe/',
