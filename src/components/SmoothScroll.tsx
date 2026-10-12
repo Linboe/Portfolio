@@ -7,12 +7,10 @@ gsap.registerPlugin(ScrollTrigger);
 
 export default function SmoothScroll({ children }: { children: ReactNode }) {
     useEffect(() => {
-        const lenis = new Lenis({ lerp: 0.1 }); // lägre värde = mjukare/tröggare
+        const lenis = new Lenis({ lerp: 0.1 }); 
 
-        // Håll ScrollTrigger synkad med Lenis
         lenis.on('scroll', ScrollTrigger.update);
 
-        // Låt GSAP:s ticker driva Lenis
         const update = (time: number) => lenis.raf(time * 1000);
         gsap.ticker.add(update);
         gsap.ticker.lagSmoothing(0);

@@ -20,8 +20,6 @@ function Section({ id, title, variant = 'default', children }: SectionProps) {
     useGSAP(
         () => {
             const mm = gsap.matchMedia();
-
-            // Animera bara om användaren inte valt minskad rörelse
             mm.add('(prefers-reduced-motion: no-preference)', () => {
                 gsap.from('[data-reveal]', {
                     y: 60,

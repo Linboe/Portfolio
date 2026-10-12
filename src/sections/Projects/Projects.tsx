@@ -25,7 +25,6 @@ function Projects() {
         setSelectedTags([]);
     }
 
-    // Räknas fram vid rendering, sparas inte i eget state
     const visibleProjects =
         selectedTags.length === 0
             ? projects
