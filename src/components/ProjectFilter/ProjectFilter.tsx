@@ -1,41 +1,56 @@
-import type { ProjectFilterValue, Technology } from '../../types/project';
+import type { Technology } from '../../types/project';
 import styles from './ProjectFilter.module.css';
 
 type ProjectFilterProps = {
     technologies: Technology[];
-    selectedFilter: ProjectFilterValue;
-    onSelect: (filter: ProjectFilterValue) => void;
+    selectedTags: Technology[];
+    onToggle: (tag: Technology) => void;
+    onClear: () => void;
 };
 
 function ProjectFilter({
     technologies,
-    selectedFilter,
-    onSelect,
+    selectedTags,
+    onToggle,
+    onClear,
 }: ProjectFilterProps) {
-    const options: ProjectFilterValue[] = ['All', ...technologies];
+    const isAllActive = selectedTags.length === 0;
 
     return (
         <div
             className={styles.filter}
             role="group"
-            aria-label="Filtrera projekt efter teknik"
+            aria-label="Filter projects by technology"
         >
-            {options.map((option) => {
-                const isActive = option === selectedFilter;
+            <button
+                type="button"
+                className={
+                    isAllActive
+                        ? `${styles.filterButton} ${styles.filterButtonActive}`
+                        : styles.filterButton
+                }
+                onClick={onClear}
+                aria-pressed={isAllActive}
+            >
+                All
+            </button>
+
+            {technologies.map((tag) => {
+                const isActive = selectedTags.includes(tag);
 
                 return (
                     <button
-                        key={option}
+                        key={tag}
                         type="button"
                         className={
                             isActive
                                 ? `${styles.filterButton} ${styles.filterButtonActive}`
                                 : styles.filterButton
                         }
-                        onClick={() => onSelect(option)}
+                        onClick={() => onToggle(tag)}
                         aria-pressed={isActive}
                     >
-                        {option}
+                        {tag}
                     </button>
                 );
             })}
