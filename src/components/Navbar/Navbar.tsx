@@ -34,7 +34,7 @@ function Navbar({ brand, links, onBrandClick }: NavbarProps) {
                     type="button"
                     className={styles.menuButton}
                     onClick={() => setIsMenuOpen(!isMenuOpen)}
-                    aria-label={isMenuOpen ? 'Stäng meny' : 'Öppna meny'}
+                    aria-label={isMenuOpen ? 'Close menu' : 'Open meny'}
                     aria-expanded={isMenuOpen}
                     aria-controls="main-menu"
                 >
