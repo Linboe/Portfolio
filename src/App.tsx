@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import Footer from './components/Footer/Footer';
 import Navbar from './components/Navbar/Navbar';
 import { navLinks } from './data/navLinks';
@@ -13,12 +14,24 @@ if ('scrollRestoration' in history) {
 window.scrollTo(0, 0);
 
 function App() {
+    // Räknas upp vid varje klick på brandet, så att Home kan starta om pulsen
+    const [talkPulse, setTalkPulse] = useState(0);
+
+    function handleBrandClick() {
+        window.scrollTo({ top: 0 }); // så att knappen syns
+        setTalkPulse((n) => n + 1);
+    }
+
     return (
         <>
             <CustomCursor />
-            <Navbar brand="L☘nn" links={navLinks} />
+            <Navbar
+                brand="L☘nn"
+                links={navLinks}
+                onBrandClick={handleBrandClick}
+            />
             <main>
-                <Home />
+                <Home talkPulse={talkPulse} />
                 <About />
                 <Projects />
                 <Contact />
@@ -27,5 +40,6 @@ function App() {
         </>
     );
 }
+
 
 export default App;

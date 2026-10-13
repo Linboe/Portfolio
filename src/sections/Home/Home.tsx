@@ -2,7 +2,11 @@ import Container from '../../components/Container/Container';
 import LinkButton from '../../components/LinkButton/LinkButton';
 import styles from './Home.module.css';
 
-export function Home() {
+type HomeProps = {
+    talkPulse?: number;
+};
+
+export function Home({ talkPulse = 0 }: HomeProps) {
     return (
         <section id="home" className={styles.home}>
             <Container className={styles.homeContent}>
@@ -39,9 +43,16 @@ export function Home() {
                     <LinkButton href="#projects">
                         View my projects
                     </LinkButton>
-                    <LinkButton href="#contact">
-                        Let's talk
-                    </LinkButton>
+
+                    {/* key startar om animationen vid varje klick på brandet */}
+                    <span
+                        key={talkPulse}
+                        className={talkPulse > 0 ? styles.pulse : undefined}
+                    >
+                        <LinkButton href="#contact">
+                            Let's talk
+                        </LinkButton>
+                    </span>
                 </div>
             </Container>
         </section>

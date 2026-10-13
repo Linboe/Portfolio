@@ -129,3 +129,69 @@
     justify-content: flex-start;
   }
 }
+
+/* Highlight-linje som löper runt "Let's talk" när brandet klickas */
+@property --talk-angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.pulse {
+  position: relative;
+  display: inline-flex;
+  border-radius: 999px;
+}
+
+.pulse::before {
+  content: '';
+  position: absolute;
+  inset: -3px;
+  padding: 2px; /* ringens tjocklek */
+  border-radius: inherit;
+  pointer-events: none;
+
+  /* Ljuslinjen: svans som tonar upp till en skarp "spets" */
+  background: conic-gradient(
+    from var(--talk-angle),
+    transparent 0%,
+    transparent 60%,
+    var(--color-highlight) 100%
+  );
+
+  /* Visa bara ringen, inte fyllningen */
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask:
+    linear-gradient(#000 0 0) content-box exclude,
+    linear-gradient(#000 0 0);
+
+  animation:
+    talkSpin 0.9s linear 2,
+    talkFade 1.8s ease-out forwards;
+}
+
+@keyframes talkSpin {
+  to {
+    --talk-angle: 360deg;
+  }
+}
+
+@keyframes talkFade {
+  0%,
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pulse::before {
+    animation: none;
+    opacity: 0;
+  }
+}

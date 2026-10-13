@@ -6,9 +6,10 @@ import styles from './Navbar.module.css';
 type NavbarProps = {
     brand: string;
     links: NavLink[];
+    onBrandClick?: () => void;
 };
 
-function Navbar({ brand, links }: NavbarProps) {
+function Navbar({ brand, links, onBrandClick }: NavbarProps) {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     const menuClassName = isMenuOpen
@@ -18,7 +19,15 @@ function Navbar({ brand, links }: NavbarProps) {
     return (
         <header className={styles.navbar}>
             <Container className={styles.navbarInner}>
-                <a href="#home" className={styles.brand}>
+                <a
+                    href="#home"
+                    className={styles.brand}
+                    onClick={(e) => {
+                        e.preventDefault(); // hoppa inte till #home
+                        setIsMenuOpen(false);
+                        onBrandClick?.();
+                    }}
+                >
                     {brand}
                 </a>
 
