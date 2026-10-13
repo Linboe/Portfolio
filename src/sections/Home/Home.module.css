@@ -70,3 +70,62 @@
     justify-content: center;
   }
 }
+
+/* --- Desktop: asymmetrisk layout på 12-kolumners rutnät --- */
+@media (min-width: 900px) {
+  .home {
+    text-align: left;
+  }
+
+  .homeContent {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: var(--space-md);
+    align-items: start;
+  }
+
+  .greeting,
+  .name {
+    grid-column: 1 / -1;
+  }
+
+  .name {
+    font-size: clamp(6rem, 18vw, 13rem);
+    margin-block: 0.25rem 2rem;
+    line-height: 0.95;
+  }
+
+  /* En enda löpande linje över hela bredden */
+  .homeContent::before {
+    content: '';
+    grid-column: 1 / -1;
+    grid-row: 3;
+    align-self: start;
+    height: 1px;
+    background: var(--color-surface);
+  }
+
+  /* Roll och intro startar på samma höjd, under linjen */
+  .role,
+  .intro {
+    grid-row: 3;
+    margin: 0;
+    padding-top: var(--space-sm);
+  }
+
+  .role {
+    grid-column: 1 / 8;
+    color: var(--color-surface);
+  }
+
+  .intro {
+    grid-column: 8 / -1;
+  }
+
+  .actions {
+    grid-column: 8 / -1;
+    grid-row: 4;
+    margin-top: var(--space-md);
+    justify-content: flex-start;
+  }
+}
