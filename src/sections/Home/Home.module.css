@@ -11,6 +11,7 @@
 }
 
 .greeting {
+  font-size: clamp(1.1rem, 3.5vw, 1.5rem);
   font-weight: 600;
   letter-spacing: 0.05em;
   color: var(--color-highlight);
@@ -18,7 +19,7 @@
 
 .name {
   margin-block: 0.5rem;
-  font-size: clamp(2.2rem, 9vw, 4.5rem);
+  font-size: clamp(3rem, 13vw, 6.5rem);
   line-height: 1.1;
   overflow-wrap: anywhere;
   color: var(--color-highlight);
