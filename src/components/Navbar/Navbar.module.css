@@ -68,7 +68,8 @@
 }
 
 .menuLink:hover {
-  color: var(--color-heading-light);
+  color: var(--color-highlight);
+  
 }
 
 /* Desktop: links in a row, no hamburger button */

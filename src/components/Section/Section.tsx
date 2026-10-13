@@ -29,7 +29,7 @@ function Section({ id, title, variant = 'default', children }: SectionProps) {
 
                 const hidden = { y: 60, opacity: 0 };
 
-                const show = (batch: HTMLElement[]) =>
+                const show = (batch: Element[]) =>
                     gsap.to(batch, {
                         y: 0,
                         opacity: 1,
@@ -40,8 +40,8 @@ function Section({ id, title, variant = 'default', children }: SectionProps) {
                     });
 
                 // Elementet är utanför bild när det nollställs, så det syns inte
-                const hide = (batch: HTMLElement[]) =>
-                    gsap.set(batch, { ...hidden, overwrite: true });
+                const hide = (batch: Element[]) =>
+                gsap.set(batch, { ...hidden, overwrite: true });
 
                 gsap.set(items, hidden);
 
