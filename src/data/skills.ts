@@ -5,9 +5,11 @@ export const skills: string[] = [
     'HTML',
     'CSS',
     'Git',
-    'Express',
-    'MongoDB',
     'Vite',
     'Figma',
-    'MySQL'
+    'REST API',
+    'Node.js',
+    'Express',
+    'MySQL',
+    'MongoDB',
 ];
