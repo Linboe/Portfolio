@@ -22,8 +22,7 @@ function Navbar({ brand, links, onBrandClick }: NavbarProps) {
                 <a
                     href="#home"
                     className={styles.brand}
-                    onClick={(e) => {
-                        e.preventDefault(); // hoppa inte till #home
+                    onClick={() => {
                         setIsMenuOpen(false);
                         onBrandClick?.();
                     }}

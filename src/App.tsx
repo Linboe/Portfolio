@@ -18,7 +18,6 @@ function App() {
     const [talkPulse, setTalkPulse] = useState(0);
 
     function handleBrandClick() {
-        window.scrollTo({ top: 0 }); // så att knappen syns
         setTalkPulse((n) => n + 1);
     }
 
