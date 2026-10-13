@@ -1,0 +1,78 @@
+.cursor {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  /* Inverteras mot bakgrunden så den syns på både ljus och mörk sektion */
+  mix-blend-mode: difference;
+}
+
+.cursor[data-visible='true'] {
+  opacity: 1;
+}
+
+/* Över textfält visas den vanliga textmarkören i stället */
+.cursor[data-state='text'] {
+  opacity: 0;
+}
+
+/* GSAP flyttar den här; formen ligger i barnet så att CSS och GSAP inte krockar */
+.follower {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  will-change: transform;
+}
+
+.shape {
+  position: absolute;
+  display: grid;
+  place-items: center;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #fff;
+  transform: translate(-50%, -50%) scale(1);
+  transition:
+    width 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+    height 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 0.25s ease,
+    transform 0.25s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.label {
+  font-family: var(--font-family);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #000;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+/* Över länk/knapp: växer lite och blir halvgenomskinlig */
+.cursor[data-state='link'] .shape {
+  width: 26px;
+  height: 26px;
+  opacity: 0.6;
+}
+
+/* Med etikett: lite större cirkel med text */
+.cursor[data-state='label'] .shape {
+  width: 64px;
+  height: 64px;
+}
+
+.cursor[data-state='label'] .label {
+  opacity: 1;
+}
+
+/* Klick */
+.cursor[data-pressed='true'] .shape {
+  transform: translate(-50%, -50%) scale(0.75);
+}

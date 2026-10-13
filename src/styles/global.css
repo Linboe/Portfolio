@@ -97,3 +97,16 @@ button:focus-visible {
     animation: none !important;
   }
 }
+
+  /* Cursor */
+.has-custom-cursor,
+.has-custom-cursor * {
+  cursor: none !important;
+}
+
+.has-custom-cursor input,
+.has-custom-cursor textarea,
+.has-custom-cursor select {
+  cursor: text !important;
+}
+
