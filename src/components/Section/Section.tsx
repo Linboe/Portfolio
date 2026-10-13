@@ -20,18 +20,38 @@ function Section({ id, title, variant = 'default', children }: SectionProps) {
     useGSAP(
         () => {
             const mm = gsap.matchMedia();
+
             mm.add('(prefers-reduced-motion: no-preference)', () => {
-                gsap.from('[data-reveal]', {
-                    y: 60,
-                    opacity: 0,
-                    duration: 1,
-                    ease: 'power3.out',
-                    stagger: 0.15,
-                    scrollTrigger: {
-                        trigger: container.current,
-                        start: 'top 80%',
-                        toggleActions: 'play none none reverse',
-                    },
+                const items = gsap.utils.toArray<HTMLElement>(
+                    '[data-reveal]',
+                    container.current,
+                );
+
+                const hidden = { y: 60, opacity: 0 };
+
+                const show = (batch: HTMLElement[]) =>
+                    gsap.to(batch, {
+                        y: 0,
+                        opacity: 1,
+                        duration: 1,
+                        ease: 'power3.out',
+                        stagger: 0.15,
+                        overwrite: true,
+                    });
+
+                // Elementet är utanför bild när det nollställs, så det syns inte
+                const hide = (batch: HTMLElement[]) =>
+                    gsap.set(batch, { ...hidden, overwrite: true });
+
+                gsap.set(items, hidden);
+
+                ScrollTrigger.batch(items, {
+                    start: 'top 88%',
+                    end: 'bottom top',
+                    onEnter: show,
+                    onEnterBack: show,
+                    onLeave: hide,
+                    onLeaveBack: hide,
                 });
             });
         },
