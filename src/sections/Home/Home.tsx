@@ -36,10 +36,10 @@ export function Home() {
                     className={`${styles.actions} ${styles.reveal}`}
                     style={{ animationDelay: '0.58s' }}
                 >
-                    <LinkButton href="#projects" variant="secondary">
+                    <LinkButton href="#projects">
                         View my projects
                     </LinkButton>
-                    <LinkButton href="#contact" variant="secondary">
+                    <LinkButton href="#contact">
                         Let's talk
                     </LinkButton>
                 </div>
