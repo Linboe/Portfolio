@@ -71,3 +71,6 @@ diagram/illustrationer)
 ○ Förklara er komponentarkitektur och era beslut kring state
 ○ Vad ni skulle göra annorlunda
 ○ Ev. om ni har använt AI-verktyg, vilka AI-verktyg och till vad
+
+#### CSS
+Projektet använder CSS Modules + en global CSS-fil + CSS-variabler, och på några ställen små inline-styles.

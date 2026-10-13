@@ -22,6 +22,16 @@ export function Home({ talkPulse = 0 }: HomeProps) {
                 >
                     Linn
                 </h1>
+                <div
+                    className={`${styles.imageWrapper} ${styles.reveal}`}
+                    style={{ animationDelay: '0.28s' }}
+                >
+                    <img
+                        src="src/assets/artpic.jpg"
+                        alt="Linn"
+                        className={styles.profileImg}
+                    />
+                </div>
                 <p
                     className={`${styles.role} ${styles.reveal}`}
                     style={{ animationDelay: '0.34s' }}
@@ -40,18 +50,14 @@ export function Home({ talkPulse = 0 }: HomeProps) {
                     className={`${styles.actions} ${styles.reveal}`}
                     style={{ animationDelay: '0.58s' }}
                 >
-                    <LinkButton href="#projects">
-                        View my projects
-                    </LinkButton>
+                    <LinkButton href="#projects">View my projects</LinkButton>
 
                     {/* key startar om animationen vid varje klick på brandet */}
                     <span
                         key={talkPulse}
                         className={talkPulse > 0 ? styles.pulse : undefined}
                     >
-                        <LinkButton href="#contact">
-                            Let's talk
-                        </LinkButton>
+                        <LinkButton href="#contact">Let's talk</LinkButton>
                     </span>
                 </div>
             </Container>
