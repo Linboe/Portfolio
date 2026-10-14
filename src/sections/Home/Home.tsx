@@ -1,6 +1,7 @@
 import Container from '../../components/Container/Container';
 import LinkButton from '../../components/LinkButton/LinkButton';
 import styles from './Home.module.css';
+import artpic from '../../assets/artpic.jpg';
 
 type HomeProps = {
     talkPulse?: number;
@@ -27,7 +28,7 @@ export function Home({ talkPulse = 0 }: HomeProps) {
                     style={{ animationDelay: '0.28s' }}
                 >
                     <img
-                        src="src/assets/artpic.jpg"
+                        src={artpic}
                         alt="Linn"
                         className={styles.profileImg}
                     />
