@@ -177,6 +177,15 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
 `isMenuOpen` indicates whether the mobile menu is open. Only the navbar cares about it, so the state is local. The class name, icon, and `aria-expanded` are computed from this value instead of being stored separately.
 
 ## What I Would Do Differently
+I first started building a different portfolio, but I chose to create a completely new project (this one) after realizing that the structure of the first one was not optimal. It felt easier to start from scratch than to fix the old one.
+
+If I were to do it again, I would focus on finishing each component before starting a new one. During this process, I went back and changed the same component several times, which meant I had to clean up dead code afterwards.
+
+In `Home`, I don't use `Section`, which creates an inconsistency. I would change this.
+
+In `ContactForm`, the validation, state, and field list currently live in the same file. This is only because I will remove the whole form after submission, and keeping it in one file makes that easier.
+
+I also mixed languages throughout the project (a habit of mine). In the future, I will try to be more consistent to avoid having to fix it afterwards.
 
 ## Use of AI
 
