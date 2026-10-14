@@ -2,7 +2,7 @@
 
 ## Live Link
 
-👉 Link to Live Portfolio
+👉 [Link to Live Portfolio](https://portfolio-linn.vercel.app/)
 
 ## Project Description
 
