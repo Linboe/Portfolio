@@ -39,7 +39,6 @@ function Section({ id, title, variant = 'default', children }: SectionProps) {
                         overwrite: true,
                     });
 
-                // Elementet är utanför bild när det nollställs, så det syns inte
                 const hide = (batch: Element[]) =>
                 gsap.set(batch, { ...hidden, overwrite: true });
 

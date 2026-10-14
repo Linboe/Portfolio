@@ -18,7 +18,7 @@ function CustomCursor() {
     useGSAP(() => {
         const mm = gsap.matchMedia();
 
-        // Bara för enheter med mus (inte touch)
+        // Just for hover not touch
         mm.add('(hover: hover) and (pointer: fine)', () => {
             const root = rootRef.current!;
             const follower = followerRef.current!;
@@ -36,7 +36,6 @@ function CustomCursor() {
                 label.textContent = text;
             };
 
-            // Ingen följning: positionen sätts direkt på musen
             const onMove = (e: PointerEvent) => {
                 if (e.pointerType !== 'mouse') return;
 

@@ -14,7 +14,6 @@ if ('scrollRestoration' in history) {
 window.scrollTo(0, 0);
 
 function App() {
-    // Räknas upp vid varje klick på brandet, så att Home kan starta om pulsen
     const [talkPulse, setTalkPulse] = useState(0);
 
     function handleBrandClick() {
