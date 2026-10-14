@@ -24,7 +24,7 @@ function App() {
         <>
             <CustomCursor />
             <Navbar
-                brand={'L\u2618nn'}
+                brand={'L\u2618\uFE0Enn'}
                 links={navLinks}
                 onBrandClick={handleBrandClick}
             />
