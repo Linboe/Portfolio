@@ -62,9 +62,9 @@
 
 /* --- Text Reveal Animation --- */
 .reveal {
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeInUp 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+  opacity: 1; /* Tvinga fram att elementen syns direkt */
+  transform: none;
+  animation: none;
 }
 
 @keyframes fadeInUp {
