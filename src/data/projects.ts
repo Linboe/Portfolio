@@ -6,7 +6,7 @@ import image4 from '../assets/projects/project-book-app.png';
 import image5 from '../assets/projects/project-memcap.png';
 import image6 from '../assets/projects/project-bubs.png';
 import image7 from '../assets/projects/project-gsap-animation.png';
-import image8 from '../assets/projects/project-eshop-database.png'
+import image8 from '../assets/projects/project-eshop-database.png';
 
 export const projects: Project[] = [
     {
@@ -41,7 +41,7 @@ export const projects: Project[] = [
     },
     {
         id: 4,
-        title: 'Full-stack Book-app ',
+        title: 'Full-stack Book-app',
         description:
             'A full-stack MongoDB application featuring end-to-end CRUD capabilities for book catalog management.',
         imageUrl: image4,
