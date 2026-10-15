@@ -53,7 +53,6 @@ export function Home({ talkPulse = 0 }: HomeProps) {
                 >
                     <LinkButton href="#projects">View my projects</LinkButton>
 
-                    {/* key startar om animationen vid varje klick på brandet */}
                     <span
                         key={talkPulse}
                         className={talkPulse > 0 ? styles.pulse : undefined}
