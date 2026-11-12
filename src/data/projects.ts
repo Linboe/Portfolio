@@ -7,6 +7,7 @@ import image5 from '../assets/projects/project-memcap.png';
 import image6 from '../assets/projects/project-bubs.png';
 import image7 from '../assets/projects/project-gsap-animation.png';
 import image8 from '../assets/projects/project-eshop-database.png';
+import image9 from '../assets/projects/project-questlog.png'
 
 export const projects: Project[] = [
     {
@@ -91,5 +92,14 @@ export const projects: Project[] = [
         technologies: ['Express', 'TypeScript', 'MySQL'],
         repoUrl:
             'https://github.com/Linboe/Inl1-Api-utveckling-och-DB-normalisering',
+    },
+    {
+        id: 9,
+        title: 'Questlog',
+        description: 'A RESTful API for managing an e-shop product catalog.',
+        imageUrl: image9,
+        technologies: ['CSS', 'TypeScript', 'React'],
+        liveUrl: 'https://questlog-tan.vercel.app/',
+        repoUrl: 'https://github.com/Linboe/Questlog',
     },
 ];
