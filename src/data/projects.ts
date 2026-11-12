@@ -96,7 +96,8 @@ export const projects: Project[] = [
     {
         id: 9,
         title: 'Questlog',
-        description: 'A RESTful API for managing an e-shop product catalog.',
+        description:
+            'A game backlog app. Games are stored in the Questlog API under a handle chosen by the user.',
         imageUrl: image9,
         technologies: ['CSS', 'TypeScript', 'React'],
         liveUrl: 'https://questlog-tan.vercel.app/',
