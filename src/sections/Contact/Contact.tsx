@@ -1,4 +1,4 @@
-import ContactForm from '../../components/ContactForm/ContactForm';
+// import ContactForm from '../../components/ContactForm/ContactForm';
 import Section from '../../components/Section/Section';
 import { contacts } from '../../data/contacts';
 import styles from './Contact.module.css';
