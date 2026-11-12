@@ -14,9 +14,9 @@ function Contact() {
                 Feel free to get in touch!
             </p>
 
-            <div data-reveal>
+            {/* <div data-reveal>
                 <ContactForm />
-            </div>
+            </div> */}
 
             <ul
                 className={styles.contactList}
